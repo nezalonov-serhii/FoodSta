@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+////////// Utils
+@import './utils/variables';
+@import './utils/utils';
+@import './utils/mixins';
+
+
+////////// Base style
+@import './base/common';
+@import './base/buttons';
+
+
+////////// Layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/offerings';
+@import './layouts/favorites';
+@import './layouts/customer';
+@import './layouts/subscribe';
+@import './layouts/footer';
+
+
