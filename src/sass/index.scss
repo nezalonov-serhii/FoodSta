@@ -3,11 +3,9 @@
 @import './utils/utils';
 @import './utils/mixins';
 
-
 ////////// Base style
 @import './base/common';
 @import './base/buttons';
-
 
 ////////// Layouts
 @import './layouts/header';
@@ -17,5 +15,3 @@
 @import './layouts/customer';
 @import './layouts/subscribe';
 @import './layouts/footer';
-
-
