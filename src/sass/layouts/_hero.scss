@@ -54,6 +54,15 @@
 }
 
 .hero__item {
-    border: 14px solid #FFE550;
-    border-radius: 148px;
+  position: absolute;
+  width: 292px;
+  height: 292px;
+  left: 422px;
+  top: 163px;
+  border: 14px solid var(--secondary-background-color);
+  border-radius: 148px;
+  @media screen and (min-width: 1280px) {
+    left: 670px;
+    top: 14px;
+  }
 }
