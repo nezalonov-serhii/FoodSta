@@ -1,0 +1,24 @@
+@include mob{
+.footer{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/src/images/footer/bg-mobile.png);
+    @media (min-devicepixel-ratio:2), 
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx)
+            {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(/src/images/footer/bg-mobile@2x.png);}
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary-text-color);
+            padding-bottom: 60px;
+            padding-top: 60px;
+
+    &:container{
+    min-width: 619px;
+    min-width: 320px;
+    }
+}
+}
