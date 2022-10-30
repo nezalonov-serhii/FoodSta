@@ -1,0 +1,69 @@
+.hero {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;}
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    margin-top: 0;
+  }
+}
+
+.hero__title {
+  max-width: 280px;
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.2;
+    max-width: 537px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    max-width: 502px;
+  }
+}
+
+.hero__pretitle {
+  max-width: 266px;
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 502px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero__btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  width: 98px;
+  height: 32px;
+  border-radius: 30px;
+  background-color: var(--button-green-color);
+}
+
+.hero__slider {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
