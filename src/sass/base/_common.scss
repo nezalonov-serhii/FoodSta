@@ -5,27 +5,23 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
 
-  @media screen and (max-width: 479px) {
-    width: 480px;
-    padding: 0 20px;
-  }
+	@include mq('mob') {
+		width: 480px;
+	}
 
-  @include mq('mob') {
-    width: 320px;
-    padding: 0 32px;
-  }
+	@include mq('tab') {
+		width: 768px;
+		padding: 0 32px;
+	}
 
-  @include mq('tab') {
-    width: 768px;
-    padding: 0 32px;
-  }
-
-  @include mq('desk') {
-    width: 1280px;
-    padding: 0 16px;
-  }
+	@include mq('desk') {
+		width: 1280px;
+		padding: 0 16px;
+	}
 }
 
 .section {

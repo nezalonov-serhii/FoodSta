@@ -3,11 +3,10 @@
 // }
 
 .header-section {
-	// padding: 10px 0;
+
 }
 
 .header {
-	// width: 100%;
 	outline: 1px solid #b0c4de;
 	// position: relative;
 	height: 72px;
@@ -15,6 +14,7 @@
 }
 
 .header__body {
+	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -31,15 +31,15 @@
 	display: none;
 }
 
-@media (max-width: 767px){
-	.header__burger {
-		outline: 1px solid #b0c4de;
-		display: block;
-		position: relative;
-		width: 28px;
-		height: 28px;
-}
-}
+// @media (max-width: 767px){
+// 	.header__burger {
+// 		outline: 1px solid #b0c4de;
+// 		display: block;
+// 		position: relative;
+// 		width: 28px;
+// 		height: 28px;
+// }
+// }
 
 .header__burger span {
 	position: absolute;
@@ -51,24 +51,6 @@
 
 }
 
-// .header__burger::before,
-// .header__burger::after {
-// 	content: '';
-// 	background-color: var(--border-button-color);
-// 	position: absolute;
-// 	width: 100%;
-// 	height: 2px;
-// 	left: 0;
-// }
-
-// .header__burger::before {
-// 	top: 0;
-// }
-
-// .header__burger::after {
-// 	bottom: 0;
-// }
-
 .header__menu {
 	outline: 1px solid #b0c4de;
 }
@@ -76,6 +58,11 @@
 .header__list {
 	outline: 1px solid #b0c4de;
 	display: flex;
+
+	@media screen and (max-width: 767px) {
+			display: none;
+		}
+
 }
 
 .header__item {
@@ -90,17 +77,14 @@
 
 .header__link {
 	outline: 1px solid #b0c4de;
-	// align-items: center;
 	display: block;
 	padding: 28px 0;
 }
 
 .header__subscribe {
 	margin-left: 30px;
-display: flex;
-align-items: center;
-	// display: block;
-	// 	width: 98px;
+	display: flex;
+	align-items: center;
 }
 
 .header-btn-subscribe {
@@ -111,3 +95,39 @@ align-items: center;
 	background-color: var(--button-green-color);
 	border-radius: 30px;
 }
+
+.menu-btn {
+	// position: absolute;
+	display: flex;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (min-width: 768px) {
+			display: none;
+		}
+}
+
+.menu-icon {
+	position: absolute;
+	display: flex;
+	align-items: center;
+		justify-content: center;
+	width: 28px;
+	height: 28px;
+	fill: var(--border-button-color);
+	background-color: var(--primary-background-color);
+	// background-color: transparent;
+
+}
+
+// .menu-icon {
+// 	@media screen and (min-width: 768px) {
+// 		display: none;
+// 	}
+// }
+
+
