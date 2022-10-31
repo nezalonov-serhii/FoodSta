@@ -5,25 +5,21 @@ body {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
 
-  @media screen and (max-width: 479px) {
-    width: 480px;
+  @include mq('mob-only') {
+    max-width: 480px;
     padding: 0 20px;
   }
 
-  @include mq('mob') {
-    width: 320px;
-    padding: 0 32px;
-  }
-
-  @include mq('tab') {
-    width: 768px;
+  @include mq('tab-only') {
+    max-width: 768px;
     padding: 0 32px;
   }
 
   @include mq('desk') {
-    width: 1280px;
+    max-width: 1280px;
     padding: 0 16px;
   }
 }
@@ -34,7 +30,7 @@ body {
 h2 {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18; 
+  line-height: 1.18;
 
   @include mq('tab') {
     font-size: 42px;
