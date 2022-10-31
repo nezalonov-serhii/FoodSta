@@ -36,6 +36,10 @@
 
 .header__item {
 	outline: 1px solid #b0c4de;
+	// margin-left: 28px;
+}
+
+.header__item:not(:first-child) {
 	margin-left: 28px;
 }
 
