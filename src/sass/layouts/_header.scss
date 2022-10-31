@@ -51,23 +51,23 @@
 
 }
 
-.header__burger::before,
-.header__burger::after {
-	content: '';
-	background-color: var(--border-button-color);
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	left: 0;
-}
+// .header__burger::before,
+// .header__burger::after {
+// 	content: '';
+// 	background-color: var(--border-button-color);
+// 	position: absolute;
+// 	width: 100%;
+// 	height: 2px;
+// 	left: 0;
+// }
 
-.header__burger::before {
-	top: 0;
-}
+// .header__burger::before {
+// 	top: 0;
+// }
 
-.header__burger::after {
-	bottom: 0;
-}
+// .header__burger::after {
+// 	bottom: 0;
+// }
 
 .header__menu {
 	outline: 1px solid #b0c4de;
