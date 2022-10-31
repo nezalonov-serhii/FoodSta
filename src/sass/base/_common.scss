@@ -5,14 +5,20 @@ body {
 }
 
 .container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+
   @include mq('mob') {
-    padding: 0 20px;
-  }
-  @include mq('tab') {
-    padding: 0 32px;
+    width: 480px;
   }
 
+  @include mq('tab') {
+    width: 768px;
+    padding: 0 32px;
+  }
   @include mq('desk') {
+    width: 1280px;
     padding: 0 16px;
   }
 }
