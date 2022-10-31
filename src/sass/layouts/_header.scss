@@ -75,10 +75,17 @@
 	margin-left: 28px;
 }
 
+
+
 .header__link {
 	outline: 1px solid #b0c4de;
 	display: block;
 	padding: 28px 0;
+}
+
+.header__link:hover,
+.header__link:focus {
+	color: var(--button-green-color);
 }
 
 .header__subscribe {
@@ -94,6 +101,11 @@
 	height: 32px;
 	background-color: var(--button-green-color);
 	border-radius: 30px;
+}
+
+.header-btn-subscribe:hover,
+.header-btn-subscribe:focus {
+	background-color: var(--button-hover-color);
 }
 
 .menu-btn {
