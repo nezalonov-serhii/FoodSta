@@ -49,11 +49,12 @@
 .hero__list {
   display: none;
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-block;
   }
 }
 
 .hero__item {
     border: 14px solid #FFE550;
-    border-radius: 148px;
+    border-radius: 50%;
 }
+
