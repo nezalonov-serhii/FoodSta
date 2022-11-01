@@ -4,7 +4,12 @@
       <a href="./index.html" class="header__logo"
         ><img src="./images/logo.png" alt="site logo"
       /></a>
-      <nav class="header__menu menu-container js-menu-container">
+      <button type="button" class="menu-btn js-open-menu" data-menu-button>
+        <svg class="menu-icon-open" aria-label="mobile menu opener">
+          <use href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <nav class="menu-container js-menu-container">
         <ul class="header__list lists">
           <li class="header__item">
             <a href="#header" class="header__link link">Header</a>
@@ -31,11 +36,11 @@
             </button>
           </li>
         </ul>
-        <button type="button" class="menu-btn js-open-menu" data-menu-button>
-          <svg class="menu-icon" aria-label="mobile menu opener">
-            <use href="./images/icons.svg#icon-menu-open"></use>
-          </svg>
-        </button>
+        <button
+          type="button"
+          class="menu-btn js-close-menu"
+          data-menu-button
+        ></button>
       </nav>
     </div>
   </div>
