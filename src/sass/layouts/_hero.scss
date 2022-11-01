@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
-  max-width: 280px;
+  min-width: 280px;
   margin-bottom: 28px;
   @media screen and (min-width: 768px) {
     font-size: 42px;
@@ -49,11 +49,80 @@
 .hero__list {
   display: none;
   @media screen and (min-width: 768px) {
+
     display: flex;
+    position: absolute;
+    left: 408px;
+    top: 149px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 670px;
+    top: 14px;
+
   }
 }
 
 .hero__item {
-    border: 14px solid #FFE550;
-    border-radius: 148px;
+
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 14px solid var(--secondary-background-color);
+  border-radius: 50%;
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+    border: 26px solid var(--secondary-background-color);
+  }
+}
+
+.hero__btn-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hero__btn-next {
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 295px;
+    left: 702px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background: #ffffff;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top: 280px;
+    left: 1216px;
+    border-radius: 8px;
+    background: #FEFEFE;
+  }
+}
+
+.hero__btn-prew {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 34px;
+    height: 28px;
+    top: 295px;
+    left: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background: #ffffff;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top: 280px;
+    left: 656px;
+    border-radius: 8px;
+    background: #FEFEFE;
+  }
 }
