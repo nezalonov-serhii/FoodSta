@@ -63,11 +63,12 @@
   @include flex-center;
 }
 .favorites__dish {
-  padding: 10%;
+  padding: 17px;
   border: 11px solid var(--border-primary-color);
   border-radius: 50%;
 
-  @include mq('tab-only') {
+  @include mq('tab') {
+    padding: 21px;
     border: 14px solid var(--border-primary-color);
   }
   @include mq('desk') {
