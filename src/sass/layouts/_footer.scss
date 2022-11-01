@@ -13,14 +13,17 @@
   background-color: var(--primary-background-color);
   border: 0.854167px solid var(--border-button-color);
   border-radius: 30px;
-  // color: var(--primary-text-color);
 }
 .footer-mailing-wrapper input[type='email'] {
   padding-left: 12px;
-  color: #505050;
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  &::placeholder{
+    color: #505050;
+    // &:invalid{
+    //   outline: solid 1px #ff705d;
+    // }
+  }
 }
 @include mq('mob-only') {
   .footer {
@@ -112,7 +115,6 @@
       font-style: normal;
       font-size: 10px;
       line-height: 1.2;
-      // color: var(--primary-text-color);
     }
   }
   .placeholder {
@@ -123,7 +125,6 @@
     &-text {
       font-size: 10px;
       line-height: 1.2;
-      // color: var(--primary-text-color);
     }
     &-link {
       font-style: normal;
@@ -131,6 +132,9 @@
       line-height: 1.2;
       color: var(--border-button-color);
     }
+  }
+  .footer-mailing-wrapper input[type='email'] {
+    margin-bottom: 20px;
   }
 }
 @include mq('tab-only') {
@@ -205,6 +209,7 @@
       display: flex;
       align-items: center;
       height: 42px;
+      margin-bottom: 20px;
     }
     &-adress {
       display: flex;
@@ -366,8 +371,5 @@
           line-height: 1.2;
           color: var(--border-button-color);
         }
-      }
-      .footer-mailing-wrapper input[type='email'] {
-        margin-bottom: 0px;
       }
  }
