@@ -1,6 +1,10 @@
+.footer{
+  background-color: var(--footer-background-color);
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+}
 .footer-button {
   @include flex-center();
-  margin: 20px 20px 20px 0px;
+  margin-left: auto;
   padding: 11px 22px;
   font-weight: 500;
   font-size: 13px;
@@ -9,14 +13,14 @@
   background-color: var(--primary-background-color);
   border: 0.854167px solid var(--border-button-color);
   border-radius: 30px;
-  color: var(--primary-text-color);
+  // color: var(--primary-text-color);
 }
 .footer-mailing-wrapper input[type='email'] {
   padding-left: 12px;
   color: #505050;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 @include mq('mob-only') {
   .footer {
@@ -43,15 +47,14 @@
     }
     &-logo {
       display: block;
-      margin-right: auto;
+      margin-right: 81px;
     }
     &-nav-mob {
       display: flex;
     }
     &-menu {
       @include flex-center($jc: flex-end);
-      margin-right: 101px;
-      margin-top: 4px;
+      
     }
     &-menu-list {
       list-style: none;
@@ -66,11 +69,9 @@
     &-menu-item-link {
       text-decoration: none;
       outline: none;
-      font-weight: 400;
-      font-size: 14px;
       line-height: 1.14;
       text-align: center;
-      color: #000000;
+      color: var(--border-button-color);
     }
     &-adress {
       display: flex;
@@ -95,7 +96,7 @@
       margin-top: 40px;
     }
     &-join-title {
-      font-size: 14px;
+      font-weight: 500;
       line-height: 1.5;
       margin-bottom: 12px;
     }
@@ -109,10 +110,9 @@
       @include flex-center();
       margin-top: 40px;
       font-style: normal;
-      font-weight: 400;
       font-size: 10px;
       line-height: 1.2;
-      color: var(--primary-text-color);
+      // color: var(--primary-text-color);
     }
   }
   .placeholder {
@@ -123,7 +123,7 @@
     &-text {
       font-size: 10px;
       line-height: 1.2;
-      color: var(--primary-text-color);
+      // color: var(--primary-text-color);
     }
     &-link {
       font-style: normal;
@@ -181,18 +181,16 @@
       text-decoration: none;
       outline: none;
       font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
       line-height: 1.14;
       text-align: center;
-      color: #000000;
+      color: var(--border-button-color);
     }
     &-join-conteiner {
       display: flex;
       margin-top: 40px;
     }
     &-join-title {
-      font-size: 14px;
+      font-weight: 500;
       line-height: 1.5;
       margin-bottom: 12px;
     }
@@ -233,7 +231,6 @@
     &-reserved {
       @include flex-center();
       font-style: normal;
-      font-weight: 400;
       font-size: 10px;
       line-height: 1.2;}
       .sub-privacy-policy{
@@ -241,7 +238,7 @@
         &-text {
           font-size: 12px;
           line-height: 1.17;
-          color: var(--primary-text-color);
+          ;
         }
         &-link{
           font-style: normal;
@@ -270,11 +267,12 @@
           flex-grow: 1;
         }
         &-container {
-          padding: 118px 16px;
           max-width: 1280px;
-          display: block;
-          align-items: center;
           justify-content: center;
+          align-items: center;
+          padding-bottom: 118px;
+          padding-top: 118px;
+          display: block;
         }
         &-conteiner-desc {
           @include flex-center($ai: flex-start, $jc: space-between);
@@ -303,17 +301,15 @@
           text-decoration: none;
           outline: none;
           font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
           line-height: 1.14;
           text-align: center;
-          color: #000000;
+          color: var(--border-button-color);
         }
         &-join-conteiner {
           display: flex;
         }
         &-join-title {
-          font-size: 14px;
+          font-weight: 500;
           line-height: 1.5;
           margin-bottom: 1.2;
         }
@@ -354,10 +350,8 @@
         &-reserved {
           @include flex-center();
           font-style: normal;
-          font-weight: 400;
           font-size: 10px;
           line-height: 1.2;
-          color: var(--primary-text-color);
         }
       }
       .sub-privacy-policy {
@@ -365,7 +359,6 @@
         &-text {
           font-size: 12px;
           line-height: 1.17;
-          color: var(--primary-text-color);
         }
         &-link {
           font-style: normal;
@@ -373,5 +366,8 @@
           line-height: 1.2;
           color: var(--border-button-color);
         }
+      }
+      .footer-mailing-wrapper input[type='email'] {
+        margin-bottom: 0px;
       }
  }
