@@ -228,8 +228,8 @@
     &-adress-item-link {
       outline: none;
       font-style: normal;
-      font-size: 10px;
-      line-height: 1.2;
+      font-size: 12px;
+      line-height: 1.17;
       text-decoration-line: underline;
       color: var(--border-button-color);
     }
@@ -239,8 +239,8 @@
     &-reserved {
       @include flex-center();
       font-style: normal;
-      font-size: 10px;
-      line-height: 1.2;}
+      font-size: 12px;
+      line-height: 1.17;}
       .sub-privacy-policy{
         margin-top: 12px;
         &-text {
@@ -250,8 +250,8 @@
         }
         &-link{
           font-style: normal;
-          font-size: 10px;
-          line-height: 1.2;
+          font-size: 12px;
+          line-height: 1.17;
           color: var(--border-button-color);
         }
       }
@@ -348,8 +348,8 @@
         &-adress-item-link {
           outline: none;
           font-style: normal;
-          font-size: 10px;
-          line-height: 1.2;
+          font-size: 12px;
+          line-height: 1.17;
           text-decoration-line: underline;
           color: var(--border-button-color);
         }
@@ -359,8 +359,8 @@
         &-reserved {
           @include flex-center();
           font-style: normal;
-          font-size: 10px;
-          line-height: 1.2;
+          font-size: 12px;
+          line-height: 1.17;
         }
       }
       .sub-privacy-policy {
@@ -371,8 +371,8 @@
         }
         &-link {
           font-style: normal;
-          font-size: 10px;
-          line-height: 1.2;
+          font-size: 12px;
+          line-height: 1.17;
           color: var(--border-button-color);
         }
       }
