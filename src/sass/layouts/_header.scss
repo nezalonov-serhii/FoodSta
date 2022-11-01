@@ -6,25 +6,18 @@
 	padding: 10px 0;
 }
 
-// .header {
-// 	outline: 1px solid #b0c4de;
-// 	// position: relative;
-// 	height: 72px;
-// 	width: 100%;
-// }
-
 .header__body {
 	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 }
 
 .header__logo {
 	display: flex;
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 }
 
 .header__burger {
@@ -32,11 +25,11 @@
 }
 
 .header__menu {
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 }
 
 .header__list {
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 	display: flex;
 	font-style: normal;
 	font-weight: 400;
@@ -49,7 +42,7 @@
 }
 
 .header__item {
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 	display: flex;
 	align-items: center;
 }
@@ -59,7 +52,7 @@
 }
 
 .header__link {
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 	display: block;
 	padding: 28px 0;
 	color: inherit;
@@ -78,7 +71,7 @@
 }
 
 .header-btn-subscribe {
-	outline: 1px solid #b0c4de;
+	// outline: 1px solid #b0c4de;
 	display: block;
 	width: 98px;
 	height: 32px;
@@ -92,14 +85,13 @@
 }
 
 .menu-btn {
-	// position: absolute;
+	position: absolute;
+	top: 50%;
+	right: 0;
 	display: flex;
 	width: 28px;
 	height: 28px;
-	// margin: 0;
-	// padding: 0;
-	// align-items: center;
-	// justify-content: center;
+	transform: translateY(-50%);
 
 	@media screen and (min-width: 768px) {
 			display: none;
@@ -107,10 +99,9 @@
 }
 
 .menu-icon {
-	position: absolute;
 	display: flex;
 	align-items: center;
-		justify-content: center;
+	justify-content: center;
 	width: 28px;
 	height: 28px;
 	fill: var(--border-button-color);
