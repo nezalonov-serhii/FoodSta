@@ -1,0 +1,77 @@
+.favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq('tab') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.favorites__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.favorites__paragraph {
+  margin-bottom: 60px;
+  line-height: 1.14;
+  text-align: center;
+
+  @include mq('tab') {
+    font-size: 16px;
+    line-height: 1.17;
+  }
+  @include mq('desk') {
+    margin-bottom: 40px;
+    line-height: 1.19;
+  }
+}
+
+.favorites__list {
+  margin-bottom: 60px;
+
+  @include mq('tab') {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.favorites__item {
+  width: 100%;
+
+  @include mq('tab-only') {
+    width: calc((100% - 32px) / 2);
+  }
+
+  @include mq('desk') {
+    width: calc((100% - 2 * 32px) / 3);
+  }
+}
+
+@include mq('mob-only') {
+  .favorites__item:nth-child(1),
+  .favorites__item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .favorites__item:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+.favorites__thumb {
+  @include flex-center;
+}
+.favorites__dish {
+  padding: 17px;
+  border: 11px solid var(--border-primary-color);
+  border-radius: 50%;
+
+  @include mq('tab') {
+    padding: 21px;
+    border: 14px solid var(--border-primary-color);
+  }
+  @include mq('desk') {
+    border: 16px solid var(--border-primary-color);
+  }
+}

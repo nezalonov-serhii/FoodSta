@@ -49,6 +49,7 @@
 .hero__list {
   display: none;
   @media screen and (min-width: 768px) {
+
     display: flex;
     position: absolute;
     left: 408px;
@@ -57,10 +58,12 @@
   @media screen and (min-width: 1280px) {
     left: 670px;
     top: 14px;
+
   }
 }
 
 .hero__item {
+
   position: absolute;
   width: 320px;
   height: 320px;
@@ -122,5 +125,9 @@
     border-radius: 8px;
     background: #FEFEFE;
   }
+}
+
+    border: 14px solid #FFE550;
+    border-radius: 50%;
 }
 
