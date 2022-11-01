@@ -4,7 +4,6 @@
 }
 .footer-button {
   @include flex-center();
-  margin-left: auto;
   padding: 11px 22px;
   font-weight: 500;
   font-size: 13px;
@@ -40,6 +39,9 @@
         background-image: url(../images/footer/fruts@x2.png),
           url(../images/footer/aple@x2.png), url(../images/footer/orenge@x2.png);
       }
+    }
+    &-button {
+      margin-left: auto;
     }
     &-container {
       padding: 60px 20px;
@@ -191,6 +193,7 @@
     }
     &-join-conteiner {
       display: flex;
+      flex-direction: column;
       margin-top: 40px;
     }
     &-join-title {
@@ -312,6 +315,7 @@
         }
         &-join-conteiner {
           display: flex;
+          flex-direction: column;
         }
         &-join-title {
           font-weight: 500;
