@@ -1,29 +1,27 @@
 .customers {
-  min-width: 320px;
-  min-height: 770px;
   margin: 0 auto;
   padding: 60px 0;
   background-color: var(--primary-background-color);
   background-image: url(../images/customers/bg-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100% 770px;
+  background-size: 100% 100%;
 
-  @include mq('mob-only') {
-    max-width: 480px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
     background-image: url(../images/customers/bg-480.svg);
   }
 
   @include mq('tab-only') {
-    max-width: 768px;
-    min-height: 544px;
+    width: 768px;
+    margin: 0 auto;
     background-image: url(../images/customers/bg-tablet.svg);
     padding-top: 60px;
     padding-bottom: 120px;
   }
 
   @include mq('desk') {
-    max-width: 1280px;
-    min-height: 647px;
+    width: 1280px;
+    margin: 0 auto;
     background-image: url(../images/customers/bg-desktop.svg);
     padding-top: 100px;
     padding-bottom: 200px;
