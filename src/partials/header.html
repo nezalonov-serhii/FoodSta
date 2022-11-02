@@ -1,9 +1,20 @@
 <header class="header">
   <div class="container">
     <div class="header__body">
-      <a href="./index.html" class="header__logo"
-        ><img src="./images/logo.png" alt="site logo"
-      /></a>
+      <a href="./index.html" class="header__logo">
+        <picture>
+          <source
+            srcset="/src/images/logo.png 1x, /src/images/logo@2x.png 2x"
+          />
+          <img
+            class=""
+            src="/src/images/logo.png"
+            alt="site-logo"
+            width="66px"
+          />
+        </picture>
+      </a>
+
       <button type="button" class="menu-btn js-open-menu" data-menu-button>
         <svg class="menu-icon-open" aria-label="mobile menu opener">
           <use href="./images/icons.svg#icon-menu-open"></use>
@@ -12,10 +23,10 @@
       <nav class="menu-container js-menu-container">
         <ul class="header__list lists">
           <li class="header__item">
-            <a href="#header" class="header__link link">Header</a>
+            <a href="#header" class="header__link link">Home</a>
           </li>
           <li class="header__item">
-            <a href="#hero" class="header__link link">Hero</a>
+            <a href="#hero" class="header__link link">Favorite Food</a>
           </li>
           <li class="header__item">
             <a href="#offerings" class="header__link link">Offerings</a>
