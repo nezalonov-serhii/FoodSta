@@ -178,8 +178,7 @@
       list-style: none;
       display: flex;
       justify-content: flex-end;
-      margin-right: none;
-      margin-top: 4px;
+      // margin-top: 4px;
     }
     &-menu-item:not(:last-child) {
       margin-right: 28px;
