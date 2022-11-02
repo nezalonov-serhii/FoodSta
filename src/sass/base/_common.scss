@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  
   @include mq('mob') {
     padding: 0 20px;
   }
