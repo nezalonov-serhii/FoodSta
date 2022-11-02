@@ -1,0 +1,134 @@
+.customers {
+  margin: 0 auto;
+  padding: 60px 0;
+  background-color: var(--primary-background-color);
+  background-image: url(../images/customers/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-image: url(../images/customers/bg-480.svg);
+  }
+
+  @include mq('tab-only') {
+    width: 768px;
+    margin: 0 auto;
+    background-image: url(../images/customers/bg-tablet.svg);
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  @include mq('desk') {
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url(../images/customers/bg-desktop.svg);
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+}
+
+.customers__title {
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 20px;
+
+  @include mq('tab') {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.customers__description {
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 32px;
+
+  @include mq('tab') {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.customers__list {
+  @include mq('tab') {
+    display: flex;
+  }
+}
+
+.customers__item {
+  min-width: 280px;
+  height: auto;
+  padding: 8px;
+  border-radius: 0 25px 25px 25px;
+  background-color: var(--primary-background-color);
+
+  @include mq('tab') {
+    min-width: 336px;
+    padding: 12px;
+  }
+
+  @include mq('desk') {
+    min-width: 500px;
+    padding: 14px;
+  }
+}
+
+.customers__item:not(:last-child) {
+  margin-bottom: 24px;
+
+  @include mq('mob') {
+    margin-bottom: 48px;
+  }
+
+  @include mq('tab') {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  @include mq('desk') {
+    margin-right: 139px;
+  }
+}
+
+.customers__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 28px;
+  margin-bottom: 40px;
+
+  @include mq('tab') {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+
+.customers__about {
+  width: 160px;
+  @include flex-center(flex, start, flex-end);
+  border-right: solid 0.85px var(--border-button-color);
+}
+
+.customers__info {
+  flex-direction: column;
+}
+
+.customers__photo {
+  border: solid 2px var(--secondary-background-color);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.customers__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.customers__who {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
