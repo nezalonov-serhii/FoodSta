@@ -168,7 +168,7 @@
     }
     &-logo {
       display: block;
-      margin-right: auto;
+      margin-right: 125px;
     }
     &-nav-mob {
       display: flex;
@@ -216,7 +216,6 @@
       display: flex;
       align-items: center;
       height: 42px;
-      margin-bottom: 20px;
     }
     &-adress {
       display: flex;
@@ -294,10 +293,17 @@
           display: flex;
         }
         &-nav-mob {
-          @include flex-center($jc: space-between);
+          display: flex;
+          align-items: center;
+        }
+        &-logo-picture{
+          margin-right: 148px;
         }
         &-button {
           margin-right: 0;
+        }
+        &-menu{
+          margin-right: 200px;
         }
         &-menu-list {
           list-style: none;
@@ -306,9 +312,6 @@
         }
         &-menu-item:not(:last-child) {
           margin-right: 28px;
-        }
-        &-menu-item:last-child {
-          margin-right: 200px;
         }
         &-menu-item-link {
           text-decoration: none;
