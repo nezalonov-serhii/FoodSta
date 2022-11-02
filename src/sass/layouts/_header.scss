@@ -1,6 +1,3 @@
-// * {
-// 	outline: 1px solid #b0c4de;
-// }
 
 .header {
 	padding: 10px 0;
@@ -64,7 +61,6 @@
 	}
 }
 
-// .header__link:hover,
 .header__link:focus {
 	@include mq('tab') {
 		color: var(--button-green-color);
@@ -143,7 +139,6 @@
 
 .menu-container.is-open {
 	opacity: 1;
-	// transition: opacity 1250 var(--cubic-bezer);
 }
 
 
