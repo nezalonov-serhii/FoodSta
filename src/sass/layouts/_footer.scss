@@ -19,11 +19,13 @@
   line-height: 1.5;
   &::placeholder{
     color: #505050;
-    // &:invalid{
-    //   outline: solid 1px #ff705d;
-    // }
   }
 }
+// .form-sub:not(:placeholder-shown):required:valid {
+//   border: green;}
+// .form-sub:not(:placeholder-shown):required:invalid {
+//   border: red;}
+
 @include mq('mob-only') {
   .footer {
     background-image: url(../images/footer/fruts.png),
@@ -336,7 +338,6 @@
         }
         &-adress {
           display: flex;
-          margin-top: 100px;
         }
         &-adress-list {
           list-style: none;
@@ -354,7 +355,9 @@
           color: var(--border-button-color);
         }
         &-adress-reserved {
-          @include flex-center($ai: flex-end, $jc: space-between);
+          display: flex;
+          justify-content: space-between;
+          margin-top: 100px;
         }
         &-reserved {
           @include flex-center();
