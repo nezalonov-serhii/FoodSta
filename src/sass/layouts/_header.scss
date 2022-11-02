@@ -60,6 +60,7 @@
 .header__link:focus {
 	@include mq('mob-only') {
 		background-color: var(--button-green-color);
+		transition: background-color 250ms var(--cubic-bezer);
 	}
 }
 
@@ -136,7 +137,7 @@
 			overflow: hidden;
 			opacity: 0;
 
-			transition: opacity 250 var(--cubic-bezer);
+			transition: opacity 250ms var(--cubic-bezer);
 	}
 }
 
