@@ -1,7 +1,7 @@
 .hero {
   height: 100%;
   margin-top: 60px;
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -22,12 +22,12 @@
   line-height: 1.18;
   min-width: 280px;
   margin-bottom: 28px;
-  @media screen and (min-width: 768px) {
+  @include mq('tab') {
     font-size: 42px;
     line-height: 1.2;
     max-width: 537px;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     font-size: 48px;
     max-width: 502px;
   }
@@ -37,12 +37,12 @@
   line-height: 1.5;
   max-width: 266px;
   margin-bottom: 28px;
-  @media screen and (min-width: 768px) {
+  @include mq('tab') {
     font-size: 16px;
     line-height: 1.5;
     max-width: 336px;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     max-width: 502px;
   }
 }
@@ -67,12 +67,12 @@
 
 .hero-slider {
   display: none;
-  @media screen and (min-width: 768px) {
+  @include mq('tab') {
     width: 320px;
     height: 320px;
     display: flex;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     width: 580px;
     height: 580px;
   }
@@ -83,7 +83,7 @@
   height: 100%;
   border: 14px solid var(--secondary-background-color);
   border-radius: 50%;
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     border: 26px solid var(--secondary-background-color);
   }
 }
@@ -93,7 +93,7 @@
 }
 
 .swiper-button-next {
-  @media screen and (min-width: 768px) {
+  @include mq('tab') {
     width: 34px;
     height: 28px;
     right: -10px;
@@ -101,7 +101,7 @@
     border-radius: 4px;
     background: #ffffff;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     width: 48px;
     height: 40px;
     border-radius: 8px;
@@ -110,7 +110,7 @@
 }
 
 .swiper-button-prev {
-  @media screen and (min-width: 768px) {
+  @include mq('tab') {
     width: 34px;
     height: 28px;
     left: -10px;
@@ -118,7 +118,7 @@
     border-radius: 4px;
     background: #ffffff;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq('desk') {
     width: 48px;
     height: 40px;
     border-radius: 8px;
