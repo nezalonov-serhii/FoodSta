@@ -73,3 +73,7 @@
     border: 16px solid var(--border-primary-color);
   }
 }
+.favorites__dish:hover,
+.favorites__dish:focus{
+  background-color: var(--button-hover-color);
+  }
