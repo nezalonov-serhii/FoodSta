@@ -36,11 +36,11 @@ body {
   }
 }
   
-.red:hover,
-.red:focus {
-background-color: var(--button-hover-color);
+.border:hover,
+.border:focus {
+border-color: var(--button-hover-color);
 }
 .item-border:hover,
 .item-border:focus{ 
   color: var(--button-green-color);
-}
+} 
