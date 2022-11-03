@@ -121,7 +121,14 @@
   width: 98px;
   height: 42px;
   background-color: var(--button-green-color);
+  transition: background-color 250ms var(--cubic-bezer);
 }
+
+.subscribe__btn:hover,
+.subscribe__btn:focus {
+  background-color: var(--button-hover-color);
+}
+
 @media screen and (min-width: 1280px) {
   .subscribe__btn {
     float: none;
