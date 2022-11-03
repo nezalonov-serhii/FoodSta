@@ -1,17 +1,19 @@
 .hero {
   height: 100%;
-  margin-top: 60px;
+
+  @include mq('tab-only') {
+    padding-top: 60px;
+    padding-bottom: 73px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
   @include mq('desk') {
-    margin-top: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-}
-
-.hero__container {
-  @include mq('tab-only') {
-    position: relative;
   }
 }
 
@@ -60,8 +62,9 @@
     top: 48px;
   }
   @include mq('desk') {
-    position: unset;
-    margin-right: 0;
+    position: static;
+    margin-right: 14px;
+    top: 14px;
   }
 }
 
@@ -124,11 +127,4 @@
     border-radius: 8px;
     background: #fefefe;
   }
-}
-
-.swiper-button-prev::after {
-  content: '';
-}
-.swiper-button-next::after {
-  content: '';
 }
