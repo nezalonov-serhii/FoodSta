@@ -114,7 +114,15 @@
   resize: none;
   box-sizing: border-box;
   padding: 12px;
+  outline: none;
   // border-radius: 4px;
+}
+
+.subscribe-form__input:not(:placeholder-shown):required:valid {
+  border-color: var(--border-button-color);
+}
+.subscribe-form__input:not(:placeholder-shown):required:invalid {
+  border-color: var(--invalid);
 }
 .subscribe__btn {
   float: right;
