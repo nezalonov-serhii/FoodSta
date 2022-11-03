@@ -142,11 +142,13 @@
     text-align: left;
     border-radius: 30px;
     border: 2px solid var(--border-button-color);
+
+    transition: border 250ms var(--cubic-bezer);
   }
 
   &__btn:hover,
   &__btn:focus {
-    border: 2px solid #597d00;
+    border: 2px solid var(--hover-btn);
   }
 }
 
@@ -163,8 +165,6 @@
 @include mq('desk') {
   .offerings-wrapper {
     display: flex;
-
-    align-items: center;
   }
 }
 

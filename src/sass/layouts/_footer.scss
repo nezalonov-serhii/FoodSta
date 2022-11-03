@@ -12,6 +12,13 @@
   background-color: var(--primary-background-color);
   border: 1px solid var(--border-button-color);
   border-radius: 30px;
+
+  transition: border 250ms var(--cubic-bezer);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  border-color: var(--hover-btn);
 }
 .footer-mailing-wrapper input[type='email'] {
   padding-left: 12px;

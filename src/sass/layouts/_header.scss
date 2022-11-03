@@ -55,6 +55,7 @@
 
 .header__link:focus,
 .header__link:hover {
+  transition: color 250ms var(--cubic-bezer);
   @include mq('mob-only') {
     background-color: var(--button-green-color);
     transition: background-color 250ms var(--cubic-bezer);
@@ -86,6 +87,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
+  transition: background-color 250ms var(--cubic-bezer);
 }
 
 .header-btn-subscribe:hover,
