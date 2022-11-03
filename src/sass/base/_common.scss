@@ -23,8 +23,7 @@ body {
   }
 }
 
-.section {
-}
+
 
 .section-title {
   font-weight: 700;
@@ -36,11 +35,12 @@ body {
     line-height: 1.17;
   }
 }
+  
 .red:hover,
-.red:focus{
-  border-color: var(--button-green-color);
+.red:focus {
+background-color: var(--button-hover-color);
 }
 .blu:hover,
-.blu:focus{
-color: var(--button-green-color);
+.blu:focus{ 
+  color: var(--button-green-color);
 }
