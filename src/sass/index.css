@@ -165,7 +165,7 @@ body {
 
 .header__link:hover,
 .header__link:focus {
-  border-color: var(--button-green-color);
+  color: var(--button-green-color);
 }
 
 .header__subscribe {
