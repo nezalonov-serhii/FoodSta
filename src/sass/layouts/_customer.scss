@@ -64,12 +64,15 @@
   background-color: var(--primary-background-color);
 
   @include mq('tab') {
-    min-width: 336px;
+    width: 336px;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @include mq('desk') {
-    min-width: 500px;
+    width: 500px;
     padding: 14px;
   }
 }
@@ -101,6 +104,10 @@
   @include mq('tab') {
     font-size: 18px;
     line-height: 1.17;
+
+    @include mq(desk) {
+      margin-bottom: 32px;
+    }
   }
 }
 
