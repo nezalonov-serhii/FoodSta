@@ -1,5 +1,6 @@
 :root {
   //////////////Color
+<<<<<<< HEAD
 --button-green-color: #BBF330;
 --border-button-color: #7EB101;
 --button-hover-color: #B5FF00;
@@ -7,7 +8,24 @@
 --primary-text-color: #2C2C2C;
 --shadow-fruit-color: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
 --border-primary-color: #FFE550;
+=======
+  --button-green-color: #bbf330;
+  --border-button-color: #7eb101;
+  --button-hover-color: #b5ff00;
+  --secondary-background-color: #ffe550;
+  --primary-text-color: #2c2c2c;
+  --primary-background-color: #ffffff;
+  --footer-background-color: #fefefe;
+  --shadow-fruit-color: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  --border-primary-color: #ffe550;
+  --invalid: #ff705d;
+  //////////////Fonts
+
+  //////////////cubic-bezer
+>>>>>>> 77ff1641eb67820462dcba352958119379974ab7
   --cubic-bezer: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
