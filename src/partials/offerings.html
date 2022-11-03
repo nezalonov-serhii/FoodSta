@@ -1,14 +1,19 @@
 <section class="offerings" id="offerings">
     <div class="offerings-wrapper container">
     
-    <picture>
+    <picture class="image-standart">
         <source srcset="./images/offerings/apple-desktop.png 1x ,
                                         ./images/offerings/appel-desktop@2x.png 2x" media="(min-width:1280px)" />
     <source srcset="./images/offerings/Apple-mobile.png 1x ,
                                               ./images/offerings/Apple-mobile@2x.png 2x" media="(min-width:320px)" />
     <img class="offerings__img" src="./images/offerings/Apple-mobile.png" alt="apple">
     </picture>
-    <picture>
+    <div class="tablet-image">
+  <img src="./images/offerings/Apple-tablet-big.png" alt="big apple">
+  <img src="./images/offerings/Apple-tablet.png" alt="medium apple">
+  <img src="./images/offerings/Apple-tablet-small.png" alt="small apple">
+</div>
+    <!-- <picture>
     <source srcset="./images/offerings/Apple-tablet-big.png 1x ,
                                                 ./images/offerings/Apple-tablet-big@2x.png 2x" media="(min-width:768px)">
         </picture>
@@ -23,11 +28,11 @@
     <source srcset="./images/offerings/Apple-tablet-small.png 1x ,
                                                 ./images/offerings/Apple-tablet-small@2x.png 2x" media="(min-width:768px)">
             >
-     </picture>
+     </picture> -->
         
     
     <div class="offerings-box">
-        <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+        <h2 class="offerings__title section-title">What’s Special About Our Offerings</h2>
         <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
             elementum tristique. Duis
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
@@ -52,7 +57,12 @@
 
         </ul>
         <button type="submit" class="offerings__btn">Order Now</button>
-        <p class="mobile-extention">Read More</p>
+<div class="more">      
+    <p class="more__text">Read More </p>
+        <svg class="more__icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-more1"></use>
+        </svg>
+</div>
     </div>
     </div>
 </section>
