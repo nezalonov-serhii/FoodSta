@@ -36,3 +36,11 @@ body {
     line-height: 1.17;
   }
 }
+.border:hover,
+.border:focus{
+  border-color: var( --button-green-color);
+}
+.item-activ:hover,
+.item-activ:focus{
+  color: var(--button-green-color);
+}
