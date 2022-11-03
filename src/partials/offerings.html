@@ -1,0 +1,69 @@
+<section class="offerings" id="offerings">
+    <div class="offerings-wrapper container">
+
+        <picture class="image-standart">
+            <source srcset="./images/offerings/apple-desktop.png 1x ,
+                                        ./images/offerings/appel-desktop@2x.png 2x" media="(min-width:1280px)" />
+            <source srcset="./images/offerings/Apple-mobile.png 1x ,
+                                              ./images/offerings/Apple-mobile@2x.png 2x" media="(min-width:320px)" />
+            <img class="offerings__img" src="./images/offerings/Apple-mobile.png" alt="apple">
+        </picture>
+        <div class="tablet-image">
+            <picture>
+                <source srcset="./images/offerings/Apple-tablet-big.png 1x ,
+                                ./images/offerings/Apple-tablet-big@2x.png 2x">
+                <img src="./images/offerings/Apple-tablet-big.png" alt="big apple">
+            </picture>
+
+            <picture>
+                <source srcset="./images/offerings/Apple-tablet.png 1x ,
+                                ./images/offerings/Apple-tablet@2x.png 2x">
+                <img src="./images/offerings/Apple-tablet.png" alt="medium apple">
+            </picture>
+
+            <picture>
+                <source srcset="./images/offerings/Apple-tablet-small.png 1x ,
+                        ./images/offerings/Apple-tablet-small@2x.png 2x">
+                <img src="./images/offerings/Apple-tablet-small.png" alt="small apple">
+            </picture>
+        </div>
+
+        <div class="offerings-box">
+            <h2 class="offerings__title section-title">What’s Special About Our Offerings</h2>
+            <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                in eros
+                elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+
+            <ul class="offerings__list lists">
+                <li class="offerings__item">
+                    <svg class="offerings__icon" width="48" height="48">
+                        <use href="./images/icons.svg#icon-roket"></use>
+                    </svg>
+                    <h3 class="offerings__subtitle">Fasest Delivery</h3>
+                    <p class="offerings__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse
+                        varius enim in eros.</p>
+                </li>
+                <li class="offerings__item">
+                    <svg class="offerings__icon" width="48" height="48">
+                        <use href="./images/icons.svg#icon-Order"></use>
+                    </svg>
+                    <h3 class="offerings__subtitle">Easy To Order</h3>
+                    <p class="offerings__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse
+                        varius enim in eros.</p>
+                </li>
+
+            </ul>
+            <button type="submit" class="offerings__btn" data-modal-open-offerings>Order Now</button>
+            <div class="more">
+                <p class="more__text">Read More </p>
+                <svg class="more__icon" width="14" height="14">
+                    <use href="./images/icons.svg#icon-more1"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./index-offerings.js"></script>

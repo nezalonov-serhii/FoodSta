@@ -27,10 +27,7 @@
 }
 
 .favorites__list {
-  margin-bottom: 60px;
-
   @include mq('tab') {
-    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -61,11 +58,13 @@
 
 .favorites__thumb {
   @include flex-center;
+  
 }
 .favorites__dish {
   padding: 17px;
   border: 11px solid var(--border-primary-color);
   border-radius: 50%;
+  transition: border-color 250ms var(--cubic-bezer);
 
   @include mq('tab') {
     padding: 21px;

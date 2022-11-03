@@ -1,18 +1,19 @@
 :root {
   //////////////Color
---button-green-color: #BBF330;
---border-button-color: #7EB101;
---button-hover-color: #B5FF00;
---secondary-background-color: #FFE550;
---primary-text-color: #2C2C2C;
---primary-background-color: #ffffff;
---footer-background-color: #FEFEFE;
---shadow-fruit-color: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
---border-primary-color: #FFE550;
-  //////////////Fonts
-
-  //////////////cubic-bezer
+  --button-green-color: #bbf330;
+  --border-button-color: #7eb101;
+  --button-hover-color: #b5ff00;
+  --hover-btn: #597d00;
+  --secondary-background-color: #ffe550;
+  --primary-background-color: #ffffff;
+  --footer-background-color: #fefefe;
+  --primary-text-color: #2c2c2c;
+  --invalid: #ff705d;
+  --shadow-fruit-color: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  --border-primary-color: #ffe550;
   --cubic-bezer: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
