@@ -68,7 +68,7 @@
 }
 @media screen and (min-width: 1280px) {
 }
-.form__item {
+.subscribe-form__item {
   max-width: 279px;
   width: 100%;
   padding-bottom: 120px;
@@ -76,7 +76,7 @@
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .form__item {
+  .subscribe-form__item {
     display: flex;
     width: 100%;
     max-width: 520px;
@@ -100,11 +100,13 @@
   .subscribe-form__input {
     margin-right: 22px;
     max-width: 370px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .subscribe-form__input {
     margin-right: 32px;
+    margin-bottom: 0;
   }
 }
 
@@ -135,7 +137,6 @@
 }
 @media screen and (min-width: 768px) {
   .subscribe__img {
-    // width: 281px;
     margin-left: auto;
     margin-right: 0;
     height: 136px;
@@ -144,9 +145,9 @@
 @media screen and (min-width: 1280px) {
   .subscribe__img {
     width: 608px;
-    // height: 266px;
     margin-left: 0;
     margin-right: 0;
+
     float: right;
     transform: translateY(-100%);
   }
