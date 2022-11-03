@@ -27,10 +27,7 @@
 }
 
 .favorites__list {
-  margin-bottom: 60px;
-
   @include mq('tab') {
-    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
