@@ -83,6 +83,10 @@ line-height: 140%;
 &__input:required:valid {
   border-color: #7EB101;
 }
+&__input:invalid {
+  border-color: red;
+
+}
 
 
 &__input::placeholder{
@@ -136,6 +140,7 @@ border: transparent;
 cursor: pointer;
 border: 2px solid #7EB101;
     border-radius: 30px;}
+
 
 
 .hero-button-close{
