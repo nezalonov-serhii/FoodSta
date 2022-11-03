@@ -4,7 +4,7 @@
       <a href="./index.html" class="header__logo">
         <picture>
           <source srcset="/src/images/logo.png 1x, /src/images/logo@2x.png 2x" />
-          <img class="" src="/src/images/logo.png" alt="site-logo" width="66" />
+          <img class="" src="/src/images/logo.png" alt="site-logo" width="66px" />
         </picture>
       </a>
 
@@ -31,68 +31,49 @@
             <a href="#customers-say" class="header__link link">Customers Say</a>
           </li>
           <li class="header__subscribe">
+            <button type="button" class="header-btn-subscribe hero-button" data-modal-open>
+              Order Now
+            </button>
           </li>
-          
         </ul>
-        <button type="button" class="menu-btn js-open-menu" data-menu-button>
-          <svg class="menu-icon" aria-label="mobile menu opener">
-            <use
-              class="menu-icon-stripes"
-              href="./images/icons.svg#icon-menu-open"
-            ></use>
-          </svg>
-        </button>
-
-
-        
+        <button type="button" class="menu-btn js-close-menu" data-menu-button></button>
       </nav>
     </div>
- 
- <button type="button"class="hero-button" data-modal-open>Order Now</button>
-  
-          </div>
-    </div>
-    
-   
+  </div>
 </header>
- 
-   <div  class="backdrop is-hidden" data-modal >
-    <div class="modall">
-      <div class="form">
-         <form action="#" id="form"class="form__body">
-          <h2 class="form__title">Order Form</h2>
-          <div class="for__item">
-            <label for="forname" class="form__label">Name<span>*</span></label>
-       
-            <input type="text" name="name" id="forname"class="form__input" placeholder="Your name"required>
-            
-          </div>
-          <div class="for__item">
-            <label for="for-tel" class="form__label">Phone number </label>
-           
-            <input type="text" 
-            name="tel"
-             id="for-tel"
-             class="form__input" 
-             pattern="[0-9]{3}[0-9]{4}[0-9]{3}"
-             placeholder="+38(0_ _) _ _ _   _ _   _ _"
-       required>
-            
-          </div>
-           <div class="for__item">
-            <label for="for-email" class="form__label">E-mail</label>
-           
-            <input type="text" name="email" id="for-email"class="form__input" placeholder="example@gmail.com"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"required>
 
-          </div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modall">
+    <div class="form">
+      <form action="#" id="form" class="form__body">
+        <h2 class="form__title">Order Form</h2>
+        <div class="for__item">
+          <label for="forname" class="form__label">Name<span>*</span></label>
 
-          <button type="submit" class="form-button">Send</button>
-         </form>
-</div>
-        <button  class="hero-button-close" data-modal-close> 
-           <svg class="modal-icon-close "width="11px" height="11px">
-         <use href="./images/icons.svg#icon-icon-menu-closee"></use>
-         
-        </svg> </button >
-        <script src="./index-heder.js"></script>
+          <input type="text" name="name" id="forname" class="form__input" placeholder="Your name" required>
+
+        </div>
+        <div class="for__item">
+          <label for="for-tel" class="form__label">Phone number </label>
+
+          <input type="text" name="tel" id="for-tel" class="form__input" pattern="[0-9]{3}[0-9]{4}[0-9]{3}"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
+
+        </div>
+        <div class="for__item">
+          <label for="for-email" class="form__label">E-mail</label>
+
+          <input type="text" name="email" id="for-email" class="form__input" placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+
+        </div>
+
+        <button type="submit" class="form-button">Send</button>
+      </form>
+    </div>
+    <button class="hero-button-close" data-modal-close>
+      <svg class="modal-icon-close " width="11px" height="11px">
+        <use href="./images/icons.svg#icon-icon-menu-closee"></use>
+
+      </svg> </button>
+    <script src="./index-heder.js"></script>
