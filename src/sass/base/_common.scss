@@ -36,3 +36,11 @@ body {
     line-height: 1.17;
   }
 }
+.red:hover,
+.red:focus{
+  border-color: var(--button-green-color);
+}
+.blu:hover,
+.blu:focus{
+color: var(--button-green-color);
+}
