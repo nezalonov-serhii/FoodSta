@@ -36,6 +36,8 @@ body {
     line-height: 1.17;
   }
 }
+
+
 .border:hover,
 .border:focus {
   border-color: var(--button-green-color);
@@ -50,10 +52,10 @@ body {
 .item-activ {
   transition: color 250ms var(--cubic-bezer);
 }
-.button-active:hover .button {
+.button-active:hover .button-icon {
   fill: var(--border-button-color);
 }
-.button {
+.button-icon {
   transition: fill 250ms var(--cubic-bezer);
 }
 .button-active:active {
