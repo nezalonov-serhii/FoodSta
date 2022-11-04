@@ -61,12 +61,12 @@
     line-height: 140%;
   }
 
-}
-&__input:not(:placeholder-shown):required:valid { border-color: #7EB101;
-} 
-&__input:not(:placeholder-shown):required:invalid {border-color: red }
-
-
+  &__input:not(:placeholder-shown):required:valid {
+    border-color: #7eb101;
+  }
+  &__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
 
   &__input {
     height: 48px;
@@ -116,6 +116,34 @@
     overflow: hidden;
   }
 }
+
+.form-button {
+  display: flex;
+  min-height: 40px;
+  min-width: 106px;
+  margin-bottom: 32px;
+  margin-top: 82px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 38px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  border: transparent;
+  cursor: pointer;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+    overflow: hidden;
+  }
+}
 .form-button {
   display: flex;
   min-height: 40px;
@@ -137,32 +165,6 @@
   border: 2px solid #7eb101;
   border-radius: 30px;
 }
-
-&__input{
-appearance:none;
-position: absolute;
-overflow: hidden;
-}}
-.form-button{
-display:flex;
-min-height: 40px;
-min-width: 106px;
-margin-bottom: 32px;
-margin-top: 82px;
-margin-left: auto;
-margin-right: auto;
-padding: 10px 38px;
-justify-content: center;
-align-items: center;
-background-color:#ffffff;
-color: #2C2C2C;
-font-weight: 500;
-font-size: 13px;
-line-height: 150%;
-border: transparent;
-cursor: pointer;
-border: 2px solid #7EB101;
-    border-radius: 30px;}
 .form-button:not(:placeholder-shown):required:invalid {
   background-color: #b10101;
 }
@@ -170,7 +172,7 @@ border: 2px solid #7EB101;
   background-color: #b10101;
 }
 
-.hero-button-close{
+.hero-button-close {
   min-width: 32px;
   min-height: 32px;
   padding: 0;
@@ -185,6 +187,6 @@ border: 2px solid #7EB101;
   border-radius: 50%;
   position: absolute;
 }
-.form-button:invalid{
-border: 2px solid #b10101;
+.form-button:invalid {
+  border: 2px solid #b10101;
 }
