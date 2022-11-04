@@ -101,6 +101,10 @@
   }
 }
 
+.menu-btn:active .menu-icon-open {
+  fill: var(--secondary-background-color);
+}
+
 .menu-icon-open {
   display: flex;
   align-items: center;
