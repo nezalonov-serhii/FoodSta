@@ -40,10 +40,27 @@ body {
 .border:focus{
   border-color: var( --button-green-color);
 }
+.border{
+  transition: border-color 250ms var(--cubic-bezer);
+}
 .item-activ:hover,
 .item-activ:focus{
   color: var(--button-green-color);
 }
+.item-activ{
+  transition: color 250ms var(--cubic-bezer);
+}
 .button:hover{
   fill: var(--border-button-color);
+  
+}
+.button{
+  transition: fill 250ms var(--cubic-bezer);
+}
+.button-active:active{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+.button-activ{
+  transition: box-shadow 250ms var(--cubic-bezer);
+
 }
