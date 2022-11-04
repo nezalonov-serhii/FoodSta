@@ -14,7 +14,7 @@
     @include mq('tab') {
       width: 768px;
 
-      margin-top: -141px;
+      margin-top: -90px;
       padding-top: 150px;
       padding-bottom: 100px;
 
@@ -88,7 +88,6 @@
     text-align: left;
     margin-bottom: 16px;
     @include mq('tab') {
-      // max-width: 124px;
       line-height: 1.17;
       margin-bottom: 16px;
     }
@@ -157,8 +156,6 @@
   .offerings-wrapper {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // margin: 0 auto;
     align-items: center;
   }
 }

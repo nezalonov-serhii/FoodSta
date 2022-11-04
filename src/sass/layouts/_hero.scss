@@ -1,5 +1,7 @@
 .hero {
   height: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
 
   @include mq('tab-only') {
     padding-top: 60px;
@@ -37,7 +39,6 @@
 
 .hero__pretitle {
   line-height: 1.5;
-  max-width: 266px;
   margin-bottom: 28px;
   @include mq('tab') {
     font-size: 16px;
@@ -58,13 +59,12 @@
 .hero-slider__wrap {
   @include mq('tab') {
     position: absolute;
-    right: 7px;
-    top: 48px;
+    right: 40px;
+    top: 149px;
   }
   @include mq('desk') {
     position: static;
     margin-right: 14px;
-    top: 14px;
   }
 }
 
@@ -127,4 +127,11 @@
     border-radius: 8px;
     background: #fefefe;
   }
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+.swiper-button-next::after {
+  content: '';
 }
