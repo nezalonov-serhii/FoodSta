@@ -77,13 +77,9 @@ line-height: 140%;
     max-width: 417px;
   }
 }
-&__input:optional {
-  border-color: #7EB101;
-}
-&__input:required:valid {
-  border-color: #7EB101;
-}
-
+&__input:not(:placeholder-shown):required:valid { border-color: #7EB101;
+} 
+&__input:not(:placeholder-shown):required:invalid {border-color: red }
 
 
 &__input::placeholder{
@@ -137,8 +133,12 @@ border: transparent;
 cursor: pointer;
 border: 2px solid #7EB101;
     border-radius: 30px;}
-
-
+.form-button:not(:placeholder-shown):required:invalid {
+  background-color: #b10101;
+}
+.form-button:not(:placeholder-shown):required:valid {
+  background-color: #b10101;
+}
 
 .hero-button-close{
   min-width: 32px;
