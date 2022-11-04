@@ -156,7 +156,7 @@
     background-image: url(../images/footer/fruts-tablet.png),
       url(../images/footer/orenge-tablet.png);
     background-repeat: no-repeat;
-    background-size: 785px 506px, 203px 365px;
+    background-size: cover, 203px 365px;
     background-position: bottom, right top;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -263,7 +263,7 @@
   .footer {
     background-image: url(../images/footer/bg-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1280px;
     background-position: bottom;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
