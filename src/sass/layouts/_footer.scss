@@ -57,20 +57,21 @@
     }
     &-container {
       padding: 60px 20px;
-      max-width: 320px;
       display: block;
       align-items: center;
       justify-content: center;
     }
     &-logo {
       display: block;
-      margin-right: 81px;
+      margin-right: 70px;
     }
     &-nav-mob {
       display: flex;
+      justify-content: space-between;
     }
     &-menu {
       @include flex-center($jc: flex-end);
+      margin-right: 50px;
     }
     &-menu-list {
       list-style: none;
@@ -90,6 +91,7 @@
     }
     &-adress {
       display: flex;
+      justify-content: center;
     }
     &-adress-reserved {
       margin-top: 60px;
@@ -135,6 +137,8 @@
     margin-left: 12px;
   }
   .sub-privacy-policy {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
     &-text {
       font-size: 10px;
