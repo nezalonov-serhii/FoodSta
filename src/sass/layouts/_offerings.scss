@@ -39,8 +39,6 @@
   }
 
   &__title {
-    max-width: 280px;
-
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 28px;
@@ -54,8 +52,6 @@
     }
   }
   &__text {
-    max-width: 272px;
-
     line-height: 1.14;
     letter-spacing: 0em;
     text-align: left;
@@ -172,6 +168,7 @@
 
   &__text {
     display: block;
+    margin-right: 7px;
 
     line-height: 1.43;
     letter-spacing: 0em;
