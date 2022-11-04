@@ -89,10 +89,7 @@
       text-align: center;
       color: var(--primary-text-color);
     }
-    &-adress {
-      display: flex;
-      justify-content: center;
-    }
+
     &-adress-reserved {
       margin-top: 60px;
     }
@@ -137,8 +134,7 @@
     margin-left: 12px;
   }
   .sub-privacy-policy {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
     &-text {
       font-size: 10px;
@@ -178,12 +174,9 @@
       align-items: center;
       justify-content: center;
     }
-    &-logo {
-      display: block;
-      margin-right: 125px;
-    }
     &-nav-mob {
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
     &-menu-list {
