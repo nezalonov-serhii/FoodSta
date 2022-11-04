@@ -58,11 +58,13 @@
 
 .favorites__thumb {
   @include flex-center;
+  
 }
 .favorites__dish {
   padding: 17px;
   border: 11px solid var(--border-primary-color);
   border-radius: 50%;
+  transition: border-color 250ms var(--cubic-bezer);
 
   @include mq('tab') {
     padding: 21px;

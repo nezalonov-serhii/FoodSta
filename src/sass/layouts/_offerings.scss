@@ -14,7 +14,7 @@
     @include mq('tab') {
       width: 768px;
 
-      margin-top: -141px;
+      margin-top: -90px;
       padding-top: 150px;
       padding-bottom: 100px;
 
@@ -39,8 +39,6 @@
   }
 
   &__title {
-    max-width: 280px;
-
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 28px;
@@ -54,8 +52,6 @@
     }
   }
   &__text {
-    max-width: 272px;
-
     line-height: 1.14;
     letter-spacing: 0em;
     text-align: left;
@@ -88,7 +84,6 @@
     text-align: left;
     margin-bottom: 16px;
     @include mq('tab') {
-      // max-width: 124px;
       line-height: 1.17;
       margin-bottom: 16px;
     }
@@ -142,11 +137,13 @@
     text-align: left;
     border-radius: 30px;
     border: 2px solid var(--border-button-color);
+
+    transition: border 250ms var(--cubic-bezer);
   }
 
   &__btn:hover,
   &__btn:focus {
-    border: 2px solid #597d00;
+    border: 2px solid var(--hover-btn);
   }
 }
 
@@ -155,16 +152,12 @@
   .offerings-wrapper {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // margin: 0 auto;
     align-items: center;
   }
 }
 @include mq('desk') {
   .offerings-wrapper {
     display: flex;
-
-    align-items: center;
   }
 }
 
@@ -175,6 +168,7 @@
 
   &__text {
     display: block;
+    margin-right: 7px;
 
     line-height: 1.43;
     letter-spacing: 0em;

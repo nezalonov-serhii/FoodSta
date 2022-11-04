@@ -1,64 +1,70 @@
-<section class="hero">
-  <div class="container">
-    <h1 id="hero" class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+<section class="hero container" id="hero">
+  <div class="hero__desc">
+    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
     <p class="hero__pretitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-      enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-      dolor interdum nulla, ut commodo diam libero vitae erat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
-    <button type="button" class="hero__btn btn" data-modal-open-windows>Order Now</button>
-
-
+    <button type="button" class="hero__btn btn">Order Now</button>
+  </div>
+  <div class="hero-slider__wrap">
 
     <div class="hero-slider swiper">
       <ul class="hero__list lists swiper-wrapper">
         <li class="hero__item swiper-slide">
           <picture>
+
             <sources srcset="
-                ./images/hero/meatballs-desktop.png    1x,
-                ./images/hero/meatballs-desktop@2x.png 2x
+            ./images/hero/meatballs-desktop.png    1x,
+            ./images/hero/meatballs-desktop@2x.png 2x
+          " media="(min-width:1280px)" />
+            <source srcset="
+                ./images/hero/meatballs-tablet.png    1x,
+                ./images/hero/meatballs-tablet@2x.png 2x
+              " media="(min-width:768px)" />
+            <img class="hero__img" src="./images/hero/meatballs-tablet.png" alt="meatballs" />
+
+          </picture>
+        </li>
+        <li class="hero__item swiper-slide">
+          <picture>
+
+            <source srcset="
+                ./images/hero/cezar-desktop.png    1x,
+                ./images/hero/cezar-desktop@2x.png 2x
               " media="(min-width:1280px)" />
             <source srcset="
-                  ./images/hero/meatballs-tablet.png    1x,
-                  ./images/hero/meatballs-tablet@2x.png 2x
-                " media="(min-width:768px)" />
-            <img class="hero__img" src="./images/hero/meatballs-tablet.png" alt="meatballs" />
-          </picture>
-        </li>
-        <li class="hero__item swiper-slide">
-          <picture>
-            <source srcset="
-                  ./images/hero/cezar-desktop.png    1x,
-                  ./images/hero/cezar-desktop@2x.png 2x
-                " media="(min-width:1280px)" />
-            <source srcset="
-                  ./images/hero/cezar-tablet.png    1x,
-                  ./images/hero/cezar-tablet@2x.png 2x
-                " media="(min-width:768px)" />
+                ./images/hero/cezar-tablet.png    1x,
+                ./images/hero/cezar-tablet@2x.png 2x
+              " media="(min-width:768px)" />
             <img class="hero__img" src="./images/hero/cezar-tablet.png" alt="meatballs" />
+
           </picture>
         </li>
         <li class="hero__item swiper-slide">
           <picture>
+
             <source srcset="
-                  ./images/hero/chris-ralston-desktop.png    1x,
-                  ./images/hero/chris-ralston-desktop@2x.png 2x
-                " media="(min-width:1280px)" />
+                ./images/hero/chris-ralston-desktop.png    1x,
+                ./images/hero/chris-ralston-desktop@2x.png 2x
+              " media="(min-width:1280px)" />
             <source srcset="
-                  ./images/hero/chris-ralston-tablet.png    1x,
-                  ./images/hero/chris-ralston-tablet@2x.png 2x
-                " media="(min-width:768px)" />
+                ./images/hero/chris-ralston-tablet.png    1x,
+                ./images/hero/chris-ralston-tablet@2x.png 2x
+              " media="(min-width:768px)" />
             <img class="hero__img" src="./images/hero/chris-ralston-tablet.png" alt="meatballs" />
+
           </picture>
         </li>
       </ul>
       <div class="swiper-button-prev">
-        <svg class="hero__arow-prew" width="20" height="12">
+        <svg class="hero__arow-prew">
           <use href="./images/icons.svg#icon-arrow-prev"></use>
         </svg>
       </div>
       <div class="swiper-button-next">
-        <svg class="hero__arow-next" width="20" height="12">
+        <svg class="hero__arow-next">
           <use href="./images/icons.svg#icon-arrow-next"></use>
         </svg>
       </div>
@@ -67,4 +73,4 @@
   </div>
 
 </section>
-<script src="./index-heder.js"></script>
+<script src="./index-hero.js"></script>
