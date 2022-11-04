@@ -44,3 +44,11 @@ body {
 .item-activ:focus{
   color: var(--button-green-color);
 }
+.header-button:hover,
+.header-button:focus{
+  background-color: #B5FF00;
+}
+.footer-button:hover,
+.footer-button:focus{
+background-color: var(--secondary-background-color);
+}
