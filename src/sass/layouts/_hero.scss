@@ -54,6 +54,12 @@
   width: 98px;
   height: 32px;
   background-color: var(--button-green-color);
+  transition: background-color 250ms var(--cubic-bezer);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: var(--button-hover-color);
 }
 
 .hero-slider__wrap {
