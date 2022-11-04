@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 .backdrop {
   position: fixed;
+=======
+
+  
+.backdrop{
+   position: fixed;
+>>>>>>> Stashed changes
   top: 0;
   left: 0;
   z-index: 999;
@@ -88,6 +95,7 @@
     border-color: #7eb101;
   }
 
+<<<<<<< Updated upstream
   &__input::placeholder {
     color: #c4c4c4;
     font-weight: 400;
@@ -114,6 +122,19 @@
     appearance: none;
     position: absolute;
     overflow: hidden;
+=======
+&__input{
+  height: 48px;
+  border-radius: 30px;
+  max-width: 280px;
+  width: 100%;
+  padding: 0px 12px;
+  
+  border: 1px solid rgba(18, 18, 18, 0.12);
+ outline: none;
+   @media screen and (min-width:  768px) {
+    max-width: 417px;
+>>>>>>> Stashed changes
   }
 }
 
