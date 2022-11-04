@@ -61,6 +61,13 @@
     line-height: 140%;
   }
 
+  &__input:not(:placeholder-shown):required:valid {
+    border-color: #7eb101;
+  }
+  &__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+
   &__input {
     height: 48px;
     border-radius: 30px;
@@ -109,6 +116,7 @@
     overflow: hidden;
   }
 }
+
 .form-button {
   display: flex;
   min-height: 40px;
@@ -129,6 +137,39 @@
   cursor: pointer;
   border: 2px solid #7eb101;
   border-radius: 30px;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+.form-button {
+  display: flex;
+  min-height: 40px;
+  min-width: 106px;
+  margin-bottom: 32px;
+  margin-top: 82px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 38px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  border: transparent;
+  cursor: pointer;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+}
+.form-button:not(:placeholder-shown):required:invalid {
+  background-color: #b10101;
+}
+.form-button:not(:placeholder-shown):required:valid {
+  background-color: #b10101;
 }
 
 .hero-button-close {
