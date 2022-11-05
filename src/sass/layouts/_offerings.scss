@@ -7,7 +7,7 @@
   background-image: url(../images/offerings/bg-mobile.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
+
   @media screen and(min-width:480px) {
     background-image: url(../images/offerings/bg-480.svg);
     // width: 480px;
@@ -15,7 +15,7 @@
     @include mq('tab') {
       // width: 768px;
 
-      margin-top: -90px;
+      margin-top: -190px;
       padding-top: 150px;
       padding-bottom: 100px;
 

@@ -2,10 +2,11 @@
   height: 100%;
   padding-top: 60px;
   padding-bottom: 50px;
+  overflow: hidden;
 
   @include mq('tab-only') {
     padding-top: 60px;
-    padding-bottom: 73px;
+    padding-bottom: 173px;
     position: relative;
     top: 0;
     left: 0;
