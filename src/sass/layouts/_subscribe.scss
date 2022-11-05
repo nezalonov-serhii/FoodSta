@@ -4,17 +4,20 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -43px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .subscribe {
     max-width: 768px;
     margin-top: -73px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
   .subscribe {
     max-width: 1280px;
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: -25px;
     justify-content: center;
   }
@@ -65,7 +68,6 @@
 }
 .subscribe-form__item {
   width: 100%;
-  padding-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
 }
